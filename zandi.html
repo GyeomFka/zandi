@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daily-zandi</title>
+    <link rel="stylesheet" href="./zandi.css">
+</head>
+<body>
+    <div class="contribution-graph">
+        <div class="graph-header">
+          <h2>{COUNT} contributions in the last year</h2>
+          <div class="dropdown">Contribution settings</div>
+          <div class="year-selector">2024</div>
+        </div>
+        <div class="graph-body">
+          <div class="months">
+            <span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span>
+            <span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span>
+            <span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+          </div>
+          <div class="days">
+            <span>Mon</span>
+            <span>Wed</span>
+            <span>Fri</span>
+          </div>
+          <div class="grid">
+            <!-- 53주 * 7일 = 371개의 셀 -->
+            <div class="week">
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+            </div>
+            <!-- 위의 week div를 53번 반복 -->
+          </div>
+        </div>
+        <div class="graph-footer"
+            style="border: 1px dotted red">
+          <a href="#">Learn how we count contributions</a>
+          <div class="legend">
+            <span>Less</span>
+            <div class="legend-squares">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span>More</span>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
